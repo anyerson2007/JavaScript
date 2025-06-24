@@ -1,0 +1,23 @@
+console.log('Hola mundo')
+console.error('Hola mundo')
+console.warn('Hola mundo')/*para advertencias*/
+
+//strings
+let nombre='anyerson'
+//numbeer
+let edad = 54
+//boolean
+let esmayordeedadd=true
+
+let noHatValo = null
+
+console.log(typeof(noHatValo))//Para saber que tipo de vareable fue asicnada por el JS
+console.log(nombre, edad)
+
+console.log('primera edad', edad)
+edad =23
+console.log('secund old', edad)
+edad=0
+console.log('tree old agee', edad)
+
+

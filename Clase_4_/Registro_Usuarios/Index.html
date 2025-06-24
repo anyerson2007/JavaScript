@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Gestión de Usuarios</h1>
+
+        <form id="userForm">
+            <input type="text" placeholder="Nombre" name="nombre" required>
+            <input type="number" name="edad" placeholder="Edad" required>
+            <button type="submit" id="btnGuardar">Guardar</button>
+            <button type="button" id="btnCancelar" class="hidden">Cancelar</button>
+        </form>
+
+        <div id="alerta" class="alerta hidden"></div>
+
+        <h2>Usuarios Registrados</h2>
+        <div id="userList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  padding: 40px;
+  margin: 0;
+}
+
+
+#app {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+
+#nueva-tarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+#agregar-btn {
+  padding: 10px 16px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+#agregar-btn:hover {
+  background-color: #45a045;
+}
+
+
+#error, .error {
+  color: #c0392b;
+  font-size: 0.9em;
+}
+
+
+.oculto {
+  display: none;
+}
+
+
+#lista-tareas {
+  list-style: none;
+  padding: 0;
+}
+
+
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+
+.tarea.completada {
+  background: #d4edda;
+  text-decoration: line-through;
+  color: #333;
+}
+
+
+.botones {
+  display: flex;
+  gap: 8px;
+}
+
+
+.btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+
+.btn-completar {
+  background-color: #3498db;
+  color: white;
+}
+
+
+.btn-eliminar {
+  background-color: #e74c3c;
+  color: white;
+}
+
+
+#resumen {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 1em;
+  color: #444;
+}

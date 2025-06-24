@@ -1,0 +1,126 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #606060;
+  color: #333;
+}
+
+
+.container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.buttons.secondary button {
+  background-color: #4b5563;
+}
+
+
+.buttons.sort button {
+  background-color: #6b7280;
+}
+
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+  background-color: #2563eb;
+}
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+.item {
+  background: #e2e8f0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+/* Notificación */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+
+.notification.success {
+  background-color: #16a34a; /* Verde */
+}
+
+
+.notification.error {
+  background-color: #dc2626; /* Rojo */
+}
+
+
+.notification.info {
+  background-color: #2563eb; /* Azul */
+}
+
+
+.notification.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+.hidden {
+  transform: translateY(-20px);
+}

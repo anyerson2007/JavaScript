@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestor de Nombres</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Gestor de Nombres</h1>
+
+
+    <section class="form-section">
+      <input type="text" id="nameInput" placeholder="Escribe un nombre..." />
+      <div class="buttons">
+        <button onclick="addName()">Agregar</button>
+        <button onclick="deleteName()">Eliminar</button>
+        <button onclick="clearAll()">Limpiar Todo</button>
+      </div>
+      <div class="buttons secondary">
+        <button onclick="searchLinear()">Buscar Lineal</button>
+        <button onclick="searchBinary()">Buscar Binaria</button>
+      </div>
+      <div class="buttons sort">
+        <button onclick="sortByName()">Ordenar A-Z</button>
+        <button onclick="sortByLength()">Por Longitud</button>
+        <button onclick="reverseOrder()">Reverso</button>
+      </div>
+      <div class="buttons">
+        <button onclick="exportToCSV()">Exportar a CSV</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Lista de Nombres</h2>
+      <div id="nameList" class="list"></div>
+    </section>
+  </main>
+
+  <!-- Notificación estilizada -->
+  <div id="notification" class="notification hidden"></div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

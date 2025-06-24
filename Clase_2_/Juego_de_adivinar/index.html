@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de adivinansa</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego: Adivinar in numero del 1 al 10 </h1>
+        <button onclick="jugar()">Jugar</button>
+    </div>
+    <div id="inputModal" class="modal hidden">
+        <div class="modal-content">
+            <p id="inputPrompt">Ingrese un valor:</p>
+            <div id="mense"></div>
+            <input type="text" id="inputField"/>
+            <button onclick="enviarInput()">OK</button>
+        </div>
+    </div>
+
+    <div id="customModal" class="modal hidden">
+        <div class="modal-content">
+            <p id="modalMessage">Mensaje</p>
+            <button onclick="cerrarModal()">OK</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
