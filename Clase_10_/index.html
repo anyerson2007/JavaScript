@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestor de Tarjetas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🧩 Gestor de Tarjetas Dinámicas</h1>
+
+
+  <section class="tarjetas-container" id="tarjetas-container">
+    <div class="tarjeta" id="tarjeta1">Tarjeta 1</div>
+    <div class="tarjeta" id="tarjeta2">Tarjeta 2</div>
+  </section>
+
+
+  <section class="controles">
+    <label>Selecciona tarjeta:
+      <select id="selector">
+        <option value="tarjeta1">Tarjeta 1</option>
+        <option value="tarjeta2">Tarjeta 2</option>
+      </select>
+    </label>
+
+
+    <input type="text" id="inputClase" placeholder="Nombre de clase">
+    <button onclick="agregarClase()">Agregar clase</button>
+    <button onclick="quitarClase()">Quitar clase</button>
+    <button onclick="verificarClase()">¿Contiene clase?</button>
+    <button onclick="alternarClase()">Alternar clase</button>
+    <button onclick="reemplazarClase()">Reemplazar clase</button>
+
+
+    <hr>
+
+
+    <input type="text" id="nuevoTexto" placeholder="Nuevo texto/HTML">
+    <button onclick="cambiarTexto()">Usar textContent</button>
+    <button onclick="cambiarHTML()">Usar innerHTML</button>
+
+
+    <hr>
+
+
+    <button onclick="mostrarInfo()">📄 Mostrar información del DOM</button>
+  </section>
+
+
+  <h3>📝 Registro de acciones</h3>
+  <pre id="log"></pre>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

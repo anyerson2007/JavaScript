@@ -92,3 +92,12 @@ btnLogin.addEventListener("click", ()=>{
     )
 
 })
+const themeToggle = document.getElementById("themetoggles");
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    themeToggle.textContent = 
+        document.body.classList.contains("dark-mode") 
+        ? "MODO CLARO" 
+        : "MODO OSCURO";
+});
